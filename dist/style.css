@@ -1,28 +1,59 @@
 
-body {
-    background-color: black;
-    
-}
+
 
 .team-name {
     text-align: center;
-    background-color: grey;
-    color: black;
+    background-color: #423E37;
+    color: #EDEBD7;
+    padding: 30px;
+    margin-bottom: 0px;
 }
 
 .employee-cards {
-background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
 }
 
 .employee {
-    background-color: grey;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #A39594;
+}
+
+.card {
+    margin: auto;
+    border: 3px black solid;
 }
 
 .top {
-    background-color: black;
-    color: lightblue;
+    padding: 20px;
+    padding-left: 15px;
+    background-color: #EDEBD7;
+    color: #423E37;
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+    border-left: 3px solid black;
+}
+
+.top h2 {
+    font-size: 45px;
+}
+
+.top p {
+    font-size: 30px;
 }
 
 .bottom {
+    border: 3px solid black;
+    background-color: #6E675F;
+    padding: 10px;
+    font-size: 20px;
+}
 
+.bottom p {
+    background-color: #EDEBD7;
+    padding: 10px;
+    padding-left: 5px;
+    margin-top: 0px;
 }

@@ -4,42 +4,48 @@ function createCards(data) {
 
     function managerCard(response) {
         return `
-        <div class="top">
-        <h2>${response.name}</h2>
-        <p>Manager</p>
-        </div>
-        <div class="bottom">
-        <p>${response.id}</p>
-        <p>${response.email}</p>
-        <p>${response.officeNumber}</p>
+        <div class="card col-3">
+            <div class="top">
+                <h2>${response.name}</h2>
+                <p>Manager</p>
+            </div>
+            <div class="bottom">
+                <p>ID: ${response.id}</p>
+                <p>Email: ${response.email}</p>
+                <p>Office Number: ${response.officeNumber}</p>
+            </div>
         </div>
         `;
     }
 
     function engineerCard(response) {
         return `
-        <div class="top">
-        <h2>${response.name}</h2>
-        <p>Engineer</p>
-        </div>
-        <div class="bottom">
-        <p>${response.id}</p>
-        <p>${response.email}</p>
-        <p>${response.github}</p>
+        <div class="card col-3">
+            <div class="top">
+                <h2>${response.name}</h2>
+                <p>Engineer</p>
+            </div>
+            <div class="bottom">
+                <p>ID: ${response.id}</p>
+                <p>Email: ${response.email}</p>
+                <p>GitHub: ${response.github}</p>
+            </div>
         </div>
         `;
     }
 
     function internCard(response) {
         return `
-        <div class="top">
-        <h2>${response.name}</h2>
-        <p>Intern</p>
-        </div>
-        <div class="bottom">
-        <p>${response.id}</p>
-        <p>${response.email}</p>
-        <p>${response.school}</p>
+        <div class="card col-3">
+            <div class="top">
+                <h2>${response.name}</h2>
+                <p>Intern</p>
+            </div>
+            <div class="bottom">
+                <p>ID: ${response.id}</p>
+                <p>Email: ${response.email}</p>
+                <p>School: ${response.school}</p>
+            </div>
         </div>
         `;
     }
@@ -90,10 +96,10 @@ function generateHtml(data) {
     </head>
     <body>
 
-    <h1 class="team-name">${data.teamName}</h1>
+    <h1 class="team-name">My Team</h1>
 
     <section class="employee-cards">
-        <div class="employee">${createCards(data)}</div>
+        <div class="employee col">${createCards(data)}</div>
     </section>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

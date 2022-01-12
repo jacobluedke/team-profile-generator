@@ -40,17 +40,7 @@ function pickRole(response) {
 pickRole();
 
 function writeToFile() {
-    inquirer.prompt (
-        {
-            type: 'input',
-            message: 'Name this team',
-            name: 'teamName',
-        }
-    )
-    .then((response) => {
-        const teamName = response.teamName;
         fs.writeFileSync(path.join(path.resolve(__dirname,"dist"), "index.html"), renderer(team), "utf-8");
-    });
 };
 
 function addManager() {
