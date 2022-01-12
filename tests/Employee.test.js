@@ -25,4 +25,12 @@ describe("Employee", () => {
         })
     })
 
+    describe("email", () => {
+        it("seeing if Employee will return a given email", () => {
+            const employee = new Employee("John", 1, "employee@email.com");
+
+            expect("employee@email.com").toEqual(employee.email);
+        })
+    })
+
 })

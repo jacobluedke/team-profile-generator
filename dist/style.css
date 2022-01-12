@@ -1,0 +1,28 @@
+
+body {
+    background-color: black;
+    
+}
+
+.team-name {
+    text-align: center;
+    background-color: grey;
+    color: black;
+}
+
+.employee-cards {
+background-color: black;
+}
+
+.employee {
+    background-color: grey;
+}
+
+.top {
+    background-color: black;
+    color: lightblue;
+}
+
+.bottom {
+
+}
